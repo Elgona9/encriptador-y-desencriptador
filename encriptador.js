@@ -70,7 +70,7 @@ function desencriptarTexto(){
 
 function validadorIntento(){ //Función que se asegura de que el texto introducido sea válido
     let texto = document.getElementById('campoTexto').value;
-    let expresion = /^[a-z0-9\s!"$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~]+$/; //Expresión regular que permite letras minúsculas y espacios, números y caracteres especiales
+    let expresion = /^[a-z0-9\s!"$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~]*$/; //Expresión regular que permite letras minúsculas y espacios, números y caracteres especiales
     if(!expresion.test(texto)){
         //Si el texto no es válido, muestra un mensaje de alerta
         alert('Por favor, introduce solo letras minúsculas y espacios.');
