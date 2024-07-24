@@ -49,8 +49,22 @@ header {
     margin: 0/* Añade un poco de espacio entre las dos secciones */
 }
 
+.entrada-texto-titulo{
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: var(--color-primario);
+    margin-left: 50%;
+    display: flex;
+    white-space: nowrap;
+    margin-left: 50%;
+}
+
 textarea {
-    margin: 20% 0 30% 50%; /* Añade un poco de espacio alrededor del textarea */
+    margin: 5% 0 30% 50%; /* Añade un poco de espacio alrededor del textarea */
     width: 100%; /* Hace que el textarea se expanda para llenar su contenedor */
     border: 2px solid var(--color-fondo); /* Define un borde sólido */
     border-radius: 4px; /* Suaviza las esquinas */
@@ -74,6 +88,8 @@ textarea {
     display: flex;
     flex-direction: column;
 }
+
+
 
 #resultadoTexto{
     font-family: var(--fuente-inter);
@@ -215,6 +231,20 @@ textarea {
         margin: 0;
     }
 
+    .entrada-texto-titulo{
+        text-align: center;
+        margin-top: 2.5%;
+        margin-bottom: 1.5%;
+        font-family: var(--fuente-inter);
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--color-primario);
+        justify-content: center;
+        align-items: center;
+        white-space: wrap;
+        margin-left: 0%;
+    }
+
     .resultado-texto {
         margin: 0;
         width: 50%;
@@ -290,7 +320,7 @@ textarea {
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
     .contenedor-principal {
         flex-direction: column;
         justify-content: center; /* Change to center for symmetric alignment */
@@ -300,6 +330,20 @@ textarea {
 
     .entrada-texto {
         margin: 0;
+    }
+
+    .entrada-texto-titulo{
+        text-align: center;
+        margin-top: 2.5%;
+        margin-bottom: 1.5%;
+        font-family: var(--fuente-inter);
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--color-primario);
+        justify-content: center;
+        align-items: center;
+        white-space: wrap;
+        margin-left: 0%;
     }
 
     .resultado-texto {
