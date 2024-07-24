@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img id="header_logo" src="./assets/logo_alura.png" alt="Logo de Alura">
+    </header>
+    <main class="contenedor-principal">
+        <section class="entrada-texto">
+            <textarea id="campoTexto" name="campoTexto" rows="10" cols="50" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="advertencia-contenedor">
+                <img id="logo_exclamacion" src="./assets/logo_exclamacion.png" alt="imagen de exclamación de advertencia">
+                <p id="advertencia">Sólo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones-accion">
+                <button id="botonEncriptar" onclick="encriptarTexto()">
+                    Encriptar
+                </button>
+                <button id="botonDesencriptar" onclick="desencriptarTexto()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section id="resultado" class="resultado-texto">
+            <img id="imagenVacia" src="./assets/munieco.png" alt="Imagen de un munieco con una lupa cuando no hay texto" style="display: none;">
+            <p id="textoAdicional1" style="display: none;">Ningún mensaje fue encontrado</p>
+            <p id="textoAdicional2" style="display: none;">Ingresa el texto que desees encriptar o desencriptar</p>
+            <p id="resultadoTexto"></p> <!-- Añadido para mostrar el resultado -->
+            <button id="botonCopiar" onclick="copiarResultado()">
+                Copiar
+            </button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por David Zahid Riveros Hernández</p>
+        <p>&copy; 2024 Todos los derechos reservados</p>
+        <div class="redesSociales">
+            <a class="footer_link" href="https://www.linkedin.com/in/david-riveros-3576b6235/" target="_blank">
+                <img src="./assets/linkedin.png" alt="logo de LinkedIn" class="footer-image">
+            </a>
+            <a class="footer_link" href="https://github.com/Elgona9" target="_blank">
+                <img src="./assets/github.png" alt="logo de GitHub" class="footer-image">
+            </a>
+        </div>
+    </footer>
+    <script src="encriptador.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-fondo: #FFF5E1;
+    --color-primario: #FF6969;
+    --color-secundario: #C80036;
+    --color-terciario: #0C1844;
+    
+    --fuente-inter: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 2.5rem;
+    box-sizing: border-box;
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+}
+
+header {
+    background-color: var(--color-fondo);
+    padding: 0.1rem 0;
+}
+
+#header_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_logo img{
+    width: 7.5rem;
+    height: 3rem;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.entrada-texto {
+    flex: 1; /* Hace que cada sección ocupe la mitad del espacio disponible */
+    margin: 0/* Añade un poco de espacio entre las dos secciones */
+}
+
+textarea {
+    margin: 20% 0 30% 50%; /* Añade un poco de espacio alrededor del textarea */
+    width: 100%; /* Hace que el textarea se expanda para llenar su contenedor */
+    border: 2px solid var(--color-fondo); /* Define un borde sólido */
+    border-radius: 4px; /* Suaviza las esquinas */
+    padding: 10px; /* Añade relleno interno */
+    background-color:  var(--color-fondo); /* Establece un color de fondo claro */
+    box-shadow: none;
+    resize: none;
+    font-family: var(--fuente-inter);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-terciario);
+}
+
+.resultado-texto{
+    flex: 1; /* Hace que cada sección ocupe la mitad del espacio disponible */
+    margin: 0 10% 2% 25%; /* Añade un poco de espacio entre las dos secciones */
+    background-color: white;
+    width: 25rem;
+    height: 59rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#resultadoTexto{
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 10%;
+    color: gray;
+    text-align: left;
+}
+
+
+#imagenVacia{
+    max-width: 100%;
+    height: auto;
+    margin: 30% 20% 0 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+#textoAdicional1{
+    text-align: center;
+    margin-top: 1.25rem;
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+#textoAdicional2{
+    text-align: center;
+    margin-top: 1rem;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.botones-accion{
+    display: flex;
+    justify-content: center;
+    margin-left: 50%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    gap: 1.5rem;
+    width: 110%;
+    height: 5rem;
+}
+
+#botonEncriptar{
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-family: var(--fuente-inter);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+}
+
+#botonDesencriptar{
+    background-color: var(--color-terciario);
+    color: var(--color-fondo);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-family: var(--fuente-inter);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+}
+
+#botonCopiar{
+    background-color: white;
+    color: black;
+    border: 3px solid var(--color-primario);
+    padding: 3%;
+    border-radius: 2rem;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: auto;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10%;
+}
+
+.advertencia-contenedor{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 50%;
+}
+
+#advertencia{
+    display: flex;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 700;
+    color: gray;
+}
+
+.footer{
+    background-color: var(--color-fondo);
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.footer-image{
+    margin-top: 0.5rem;
+    width: 3rem;
+    height: auto;
+}
+
+@media (max-width: 1200px){
+    .contenedor-principal {
+        flex-direction: column;
+        justify-content: center; /* Change to center for symmetric alignment */
+        align-items: center; /* Change to center for symmetric alignment */
+        gap: 1rem; /* Reduce the gap between sections */
+    }
+
+    .entrada-texto {
+        margin: 0;
+    }
+
+    .resultado-texto {
+        margin: 0;
+        width: 50%;
+    }
+
+    textarea {
+        margin: 5% 0% 5% 0%; /* Adjust the margins for a closer alignment */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; /* Allow the textarea to wrap to the next line */
+        height: auto;
+    }
+
+    #resultadoTexto{
+        padding: 5%;
+    }
+
+    #imagenVacia{
+        display: none !important; /* Hide the image */
+        margin: 20% 10% 0 10%; /* Adjust the margins for a closer alignment */
+    }
+
+    #textoAdicional1{
+        margin-top: 3rem; /* Adjust the margin for a closer alignment */
+    }
+
+    #textoAdicional2{
+        margin-top: 0.5rem; /* Adjust the margin for a closer alignment */
+    }
+
+    .botones-accion{
+        margin-left: 32%;
+        margin-top: 2%;
+        margin-bottom: 1%;
+        gap: 1rem; /* Reduce the gap between buttons */
+        width: 80%; /* Adjust the width for a closer alignment */
+        height: auto; /* Adjust the height for a closer alignment */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+        justify-content: center; /* Center align the buttons */
+    }
+
+    #botonEncriptar{
+        margin: 0;
+        padding: 0.75rem 1.5rem;
+        width: 45%; /* Adjust the width for a closer alignment */
+    }
+
+    #botonDesencriptar{
+        padding: 0.75rem 1.5rem;
+        width: 45%; /* Adjust the width for a closer alignment */
+    }
+
+    #botonCopiar{
+        padding: 3%;
+        margin-top: 2rem; /* Adjust the margin for a closer alignment */
+        margin-left: auto; /* Align the button to the right */
+        margin-right: auto; /* Align the button to the right */
+        margin-bottom: 2rem; /* Adjust the margin for a closer alignment */
+    }
+
+    .advertencia-contenedor{
+        margin-left: 32%;
+    }
+
+    #advertencia{
+        font-size: 0.75rem;
+    }
+
+    .footer{
+        padding: 0.5rem 0;
+    }
+}
