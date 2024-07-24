@@ -17,6 +17,7 @@
 body {
     margin: 2.5rem;
     box-sizing: border-box;
+    font-family: "Inter",sans-serif;
     background-color: var(--color-fondo);
     color: var(--color-primario);
 }
@@ -287,4 +288,87 @@ textarea {
     .footer{
         padding: 0.5rem 0;
     }
+}
+
+@media(max-width: 500px){
+    .contenedor-principal {
+        flex-direction: column;
+        justify-content: center; /* Change to center for symmetric alignment */
+        align-items: center; /* Change to center for symmetric alignment */
+        gap: 1rem; /* Reduce the gap between sections */
+    }
+
+    .entrada-texto {
+        margin: 0;
+    }
+
+    .resultado-texto {
+        margin: 0;
+        width: 100%;
+    }
+
+    textarea {
+        margin: 5% 0% 5% 0%; /* Adjust the margins for a closer alignment */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; /* Allow the textarea to wrap to the next line */
+        height: auto;
+    }
+
+    #resultadoTexto{
+        padding: 5%;
+        width: 100%;
+    }
+
+    #imagenVacia{
+        display: none !important; /* Hide the image */
+        margin: 20% 10% 0 10%; /* Adjust the margins for a closer alignment */
+    }
+
+    #textoAdicional1{
+        margin-top: 3rem; /* Adjust the margin for a closer alignment */
+    }
+
+    #textoAdicional2{
+        margin-top: 0.5rem; /* Adjust the margin for a closer alignment */
+    }
+
+    .botones-accion{
+        margin-left: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        gap: 0.5rem; /* Reduce the gap between buttons */
+        width: 80%; /* Adjust the width for a closer alignment */
+        height: auto; /* Adjust the height for a closer alignment */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+        justify-content: center; /* Center align the buttons */
+    }
+
+    #botonEncriptar{
+        margin: 0;
+        padding: 0.75rem 0rem;
+        width: 80%; /* Adjust the width for a closer alignment */
+    }
+
+    #botonDesencriptar{
+        padding: 0.75rem 1.5rem;
+        width: 80%; /* Adjust the width for a closer alignment */
+    }
+
+    #botonCopiar{
+        padding: 3%;
+        margin-top: 2rem; /* Adjust the margin for a closer alignment */
+        margin-left: auto; /* Align the button to the right */  
+    }
+
+    .advertencia-contenedor{
+        margin-left: 10%;
+    }
+
+    #advertencia{
+        font-size: 0.75rem;
+    }
+      
 }
